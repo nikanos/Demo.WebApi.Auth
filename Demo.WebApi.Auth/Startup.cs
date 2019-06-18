@@ -94,7 +94,7 @@ namespace Demo.WebApi.Auth
 
             httpConfig.EnableSwagger(c =>
             {
-                c.SingleApiVersion("v1", "NBA Inspection Services APIs");
+                c.SingleApiVersion("v1", "Demo WebApi Auth Services");
                 c.OAuth2("OAuth2").Description("Resource owner password credentials").Flow("password").TokenUrl(UrlCombineLib.UrlCombine.Combine(applicationPath, config.OAuthTokenEndpoint));
                 c.OperationFilter(() => new Infrastructure.Swagger.AssignOAuth2RequirementsOperationFilter<AuthorizeAttribute>());
                 c.RootUrl(req =>

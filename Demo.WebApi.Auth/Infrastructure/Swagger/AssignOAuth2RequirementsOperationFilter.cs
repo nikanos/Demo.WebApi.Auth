@@ -21,7 +21,7 @@ namespace Demo.WebApi.Auth.Infrastructure.Swagger
                     operation.security = new List<IDictionary<string, IEnumerable<string>>>();
                 var oAuthRequirements = new Dictionary<string, IEnumerable<string>>()
                     {
-                        {"OAuth2", new string[] {"NBA Inspection Services APIs"}}
+                        {"OAuth2", new string[] {"Demo WebApi Auth Services"}}
                     };
                 operation.security.Add(oAuthRequirements);
             }
